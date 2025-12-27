@@ -27,4 +27,4 @@ EXPOSE 3000
 # main:app -> file main.py, biến app
 # --host 0.0.0.0 -> Bắt buộc để truy cập được từ bên ngoài container
 # --port 80 -> Chạy ở cổng 80
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "3000"]
+CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "3000"]
